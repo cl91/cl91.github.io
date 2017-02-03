@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Two-scale Oscillons | Cosmology at Auckland | Richard Easther</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  </head>
+
+  <body>
+    <header id="site-header">
+      <a href="http://www.cosmology.auckland.ac.nz/"
+	 title="Cosmology at Auckland | Richard Easther"
+	 rel="home">Cosmology at Auckland | Richard Easther</a>
+    </header>
+
+    <div id="content">
+      <header id="entry-header">
+	<h1 id="entry-title">Two-scale Oscillons</h1>
+
+	<div id="entry-meta">
+	  <span class="posted-on">
+	    <a href="http://www.cosmology.auckland.ac.nz/2016/11/08/two-scale-oscillons/"
+	       rel="bookmark">
+	      <time class="entry-date published"
+		    datetime="2016-11-08T13:56:47+00:00">08/11/2016
+	      </time>
+	      <a class="url fn n"
+		 href="http://www.cosmology.auckland.ac.nz/author/chang/">chang
+	  </a></span>
+	</div>
+      </header>
+
+      <div id="entry-content">
+	<p>
+	  Oscillons are spatially stationary, quasi-periodic solutions
+	  of nonlinear field theories. (<em>Informal version: oscillons
+	    are what would happen if a stone was thrown into a pond and,
+	    rather than creating ripples, the water bounced up and down
+	    at the point of impact – this doesn’t (usually!) happen with
+	    water, but is possible in systems where the “restoring force”
+	    does not increase continuously with displacement.</em>)
+	  Oscillons can be seen in a wide range of settings, including
+	  granular systems, low temperature condensates, and in models
+	  of the very early universe.
+	</p>
+
+	<p>
+	  <a href="https://arxiv.org/abs/1612.07228" target="_blank">
+	    ArXiv:1612.07228</a> (Liu and Easther) introduces a new class
+	  of oscillons which can have an off-centre spatial profile and
+	  an envelope whose overall shape evolves with time. These oscillons
+	  are exact solutions of the sine-Gordon potential in 1 dimension
+	  and have two distinct frequency parameters, ω<sub>1</sub> and
+	  ω<sub>2</sub>, both of which must be less than one; see equations
+	  4-7 of <a href="https://arxiv.org/abs/1612.07228"
+		    target="_blank">ArXiv:1612.07228</a>. In the limit where
+	  one frequency is exactly unity the solution reduces to the
+	  well-known “breather”, shown below:
+	</p>
+	<div class="video">
+	  <video controls>
+	    <source src="video/breather.mp4" type="video/mp4">
+	    <source src="video/breather.webm" type="video/webm">
+	      Your browser does not support HTML5 video.
+	      Use the latest version of Chrome or Firefox.
+	  </video>
+	</div>
+
+	<h2>Pulsating Oscillons</h2>
+	<p>
+	  When both frequencies are close to unity the envelope pulsates
+	  slowly with time while the profile is peaked at the centre:
+	</p>
+	<div class="video">
+	  <video controls>
+	    <source src="video/pulsate.mp4" type="video/mp4">
+	    <source src="video/pulsate.webm" type="video/webm">
+	      Your browser does not support HTML5 video.
+	      Use the latest version of Chrome or Firefox.
+	  </video>
+	</div>
+
+	<h2>Double-peak Breathers</h2>
+	<p>
+	  For a wide range of parameters these oscillons have a complex
+	  “double peak” structure, where the peak field amplitude occurs
+	  away from the oscillon centre, overlaid with a complex pulsating
+	  envelope:
+	</p>
+	<div class="video">
+	  <video controls>
+	    <source src="video/double.mp4" type="video/mp4">
+	    <source src="video/double.webm" type="video/webm">
+	      Your browser does not support HTML5 video.
+	      Use the latest version of Chrome or Firefox.
+	  </video>
+	</div>
+
+	<h2>Large-amplitude Limit</h2>
+	<p>
+	  When one of the frequencies approaches zero we see a fast,
+	  small amplitude oscillation, superimposed on a much slower,
+	  large amplitude variation.
+	</p>
+	<div class="video">
+	  <video controls>
+	    <source src="video/fastslow.mp4" type="video/mp4">
+	    <source src="video/fastslow.webm" type="video/webm">
+	      Your browser does not support HTML5 video.
+	      Use the latest version of Chrome or Firefox.
+	  </video>
+	</div>
+
+	<p>
+	  The above solutions are all plotted from an exact, analytic
+	  solution to the sine-Gordon equation, a 1+1 dimensional PDE.
+	  (Equations 4-7 of <a href="https://arxiv.org/abs/1612.07228" target="_blank">
+	    ArXiv:1612.07228</a>); the full solution space contains a
+	  very rich set of possible behaviours.
+	</p>
+
+	<p>
+	  Solutions with similar properties have previously been seen
+	  in variety of settings but their properties had never been
+	  understood or analysed in any detail. We use the exact 1-D
+	  solution to initialise a numerical solver (with an assumption
+	  of rotational symmetry in more than one dimension) for a range
+	  of potentials, allowing us to demonstrate that qualitatively
+	  similar solutions can be supported by a wide range of potentials.
+	</p>
+
+	<p>
+	  We are particularly interested in the oscillons seen in
+	  simulations of the dynamics following
+	  <a href="https://arxiv.org/abs/1106.3335" target="_blank">
+	    monodromy inflation</a>, an interesting class of
+	  string-motivated cosmological models. In these scenarios
+	  the resonant growth of perturbations renders the universe
+	  very inhomogeneous on microscopically small scales during
+	  an epoch roughly 10<sup>-33</sup> seconds after the Big
+	  Bang. A full 3D simulation of this oscillon-dominated phase
+	  is shown below; these results are described in more detail
+	  in <a href="https://arxiv.org/abs/1106.3335" target="_blank">
+	    ArXiv:1106.3335</a>. The simulations begin with an
+	  initially homogeneous, oscillating inflaton condensate which
+	  undergoes parametric resonance, rendering the universe highly
+	  inhomogeneous, followed by oscillon formation (the point at
+	  which the video below begins.) The oscillons are often initially
+	  highly asymmetric but relax to approximately spherical
+	  configurations. Once the oscillon dominated phase is
+	  well-established the mixture of short- and long period
+	  oscillations are clearly visible; the latter are most obvious
+	  in the oscillons which intersect the sides of the box. (The
+	  orange contours show regions in which local density is six
+	  times greater than the average density.)
+	</p>
+	<div class="video">
+	  <video controls>
+	    <source src="video/oscillon.mp4" type="video/mp4">
+	    <source src="video/oscillon.webm" type="video/webm">
+	      Your browser does not support HTML5 video.
+	      Use the latest version of Chrome or Firefox.
+	  </video>
+	</div>
+      </div><!-- .entry-content -->
+    </div><!-- #content -->
+
+  </body>
+</html>
